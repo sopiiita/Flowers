@@ -14,7 +14,7 @@ html,body{margin:0;height:100%;background:#1b1d29;overflow:hidden}
 <body>
 <pre id="s"></pre><span id="m"></span>
 <script>
-const MESSAGE="for you ♥",NUM_HEARTS=18,SPIN=.6,TILT=.3,CAM=4,PIVOT=.2;
+const MESSAGE="for my pretty princess",NUM_HEARTS=18,SPIN=.6,TILT=.3,CAM=4,PIVOT=.2;
 const WHITE=[244,248,251,254,255,231],PINK=[168,175,205,211,218,225],GOLD=[94,136,178,214,220],
 GREENS=[22,28,28,34,35,71,77,114],PAPER=[101,144,187,223,230,231],RIBBON=[88,125,161,197,204,211],
 HEARTC=[161,197,204,205,211,218],MSGC=[161,168,205,211,218,225,218,211,205,168],
@@ -84,7 +84,7 @@ for(const[x,y,z,ph,sp]of scene.sparkles){const[fx,fy,zt]=P(x,y,z),tw=Math.sin(t*
 if(tw>.85)plot(c,r,zt,"*",231);else if(tw>.4)plot(c,r,zt,"+",225);else if(tw>0)plot(c,r,zt,"·",218)}
 const shift=Math.trunc(t*6),ms=Math.max(0,Math.floor((cols-MESSAGE.length)/2));
 [...MESSAGE].forEach((k,i)=>{if(ms+i<cols){ch[(rows-2)*cols+ms+i]=k;co[(rows-2)*cols+ms+i]=MSGC[(i+shift)%MSGC.length]}});
-const hint="Solecito",hs=Math.max(0,Math.floor((cols-hint.length)/2));
+const hint="Te amo montones estrellita",hs=Math.max(0,Math.floor((cols-hint.length)/2));
 [...hint].forEach((k,i)=>{if(hs+i<cols){ch[(rows-1)*cols+hs+i]=k;co[(rows-1)*cols+hs+i]=238}});
 let out="";
 for(let r=0;r<rows;r++){let cur=-1;for(let c=0;c<cols;c++){const i=r*cols+c,k=ch[i],cc=co[i];if(k===" "){out+=" ";continue}
